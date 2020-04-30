@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Merriweather-Regular";
+  src: url("../font/Merriweather-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../font/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../font/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Miller-Display_30501";
+  src: url("../font/Miller-Display_30501.ttf") format("truetype");
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  ul{
+    li{
+      list-style-type: none;
+    }
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+}
+
+.container-max{
+  max-width: 2560px;
+  margin: auto;
+}
+
+.d-flex{
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.none{
+  display: none;
+}
+
+.overlay{
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.w-50{
+  width: 50%;
+}

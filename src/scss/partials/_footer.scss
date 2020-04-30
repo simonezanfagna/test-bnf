@@ -1,0 +1,118 @@
+footer{
+  .container-max{
+    padding-left: 60px;
+    padding-right: 60px;
+    .footer-top{
+      padding: 120px 120px;
+      background-color: rgb(51, 51, 51);
+      a{
+        color: white;
+        margin-bottom: 60px;
+        display: inline-block;
+        h1{
+          font-family: 'Montserrat-Bold';
+          letter-spacing: 1px;
+        }
+      }
+      .footer-link-container{
+        display: flex;
+        flex-wrap: wrap;
+        .footer-link{
+          margin-right: 90px;
+          &:last-child{
+            margin-right: 0;
+          }
+          ul{
+            li{
+              margin-bottom: 15px;
+              a{
+                font-family: 'Miller-Display_30501';
+                color: rgb(209, 197, 183);
+                display: inline-block;
+                margin-bottom: 0;
+                font-size: 13px;
+                &.social{
+                  font-family: 'Montserrat-Regular';
+                  letter-spacing: 4px;
+                }
+                &:hover{
+                  color: white;
+                }
+                span{
+                  margin-right: 30px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .footer-bottom{
+      padding: 30px 120px;
+      background-color: rgb(47, 47, 47);
+      color: rgb(209, 197, 183);
+      display: flex;
+      justify-content: space-between;
+      span{
+        font-family: 'Miller-Display_30501';
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px){
+  footer{
+    .container-max{
+      .footer-top{
+        padding: 60px 60px 30px;
+        .footer-link-container{
+          .footer-link{
+            margin-right: 90px;
+            margin-bottom: 30px;
+
+          }
+        }
+      }
+      .footer-bottom{
+        padding: 30px 60px;
+      }
+    }
+  }
+}
+@media (max-width: 1023.9px){
+  footer{
+    .container-max{
+      padding-left: 30px;
+      padding-right: 30px;
+      .footer-top{
+        .footer-link-container{
+          .footer-link{
+            margin-right: 60px;
+          }
+        }
+      }
+      .footer-bottom{
+        flex-wrap: wrap;
+        span:nth-child(1){
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 467.9px){
+  footer{
+    .container-max{
+      padding-left: 0;
+      padding-right: 0;
+      .footer-top{
+        padding: 30px 30px 0;
+      }
+      .footer-bottom{
+        padding: 30px 30px;
+      }
+    }
+  }
+}

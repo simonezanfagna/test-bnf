@@ -1,0 +1,16 @@
+@mixin leftRightCarousel(){
+  color: white;
+  font-family: 'Montserrat-Regular';
+  letter-spacing: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  position: absolute;
+}
+
+@mixin paragraph(){
+  font-family: 'Merriweather-Regular';
+  color: rgb(128, 128, 128);
+  font-size: 18px;
+  line-height: 40px;
+  letter-spacing: 1px;
+}

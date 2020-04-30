@@ -1,0 +1,139 @@
+header{
+  height: 75px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(209, 197, 183);
+    a{
+      display: inline-block;
+      padding: 15px;
+      h1{
+        font-family: 'Montserrat-Bold';
+        color: white;
+        letter-spacing: 1px;
+      }
+    }
+  }
+  nav{
+    display: flex;
+    align-items: center;
+    ul{
+      li{
+        display: inline-block;
+        margin: auto 30px;
+        a{
+          color: black;
+          font-family: 'Montserrat-Regular'
+        }
+      }
+
+    }
+  }
+  .search{
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+    input{
+      border: none;
+      border-bottom: 2px solid black;
+      outline: none;
+    }
+    i{
+      margin-left: 5px;
+      cursor: pointer;
+    }
+  }
+  .icon-bars{
+    display: none;
+    cursor: pointer;
+  }
+  #menu-bars{
+    display: none;
+  }
+}
+
+@media (max-width: 1299px){
+  header{
+    .icon-bars{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i.fa-bars{
+        display: inline-block;
+        margin-right: 60px;
+        color: rgb(209, 197, 183);
+        font-size: 30px;
+      }
+    }
+    #menu-bars{
+      position: absolute;
+      top: 75px;
+      width: 100%;
+      .container-menu-bars{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        background-color: white;
+        nav{
+          margin-right: 30px;
+          order: 2;
+          text-align: right;
+          margin-top: 15px;
+          margin-bottom: 15px;
+          ul{
+            display: flex;
+            flex-direction: column;
+            li{
+              margin-top: 15px;
+              margin-bottom: 15px;
+            }
+          }
+        }
+        .search{
+          order: 1;
+          margin-top: 30px;
+        }
+      }
+    }
+     & > nav{
+      display: none;
+    }
+    & > .search{
+      display: none;
+    }
+  }
+
+}
+
+@media (max-width: 1023.9px){
+  header{
+    .icon-bars{
+      i.fa-bars{
+        margin-right: 30px;
+      }
+    }
+    #menu-bars{
+      .container-menu-bars{
+        nav{
+          ul{
+            li{
+              margin-right: 0;
+            }
+          }
+        }
+        .search{
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+}
